@@ -9,3 +9,7 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+* {
+    border: 1px solid lightgray;
+}
