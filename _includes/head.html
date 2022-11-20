@@ -1,0 +1,59 @@
+<head>
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+
+    <!-- meta data to tell the browser that your devide is responsive -->
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Metadata -->
+    <title> {{page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+    <meta name="description" content="{{page.seo.description | default: site.data.site-settings.seo.description }}">
+    <meta name="keywords" content="{{page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
+
+    {% if page.seo.hide-from-google == true %}
+        <meta name="robots" content="noindex, nofollow">
+    {% else %}
+        <meta name="robots" content="index, follow">
+    {% endif %}
+
+    <!--  Social media sharing META Tags -->
+    <meta property="og:title" content="{{page.seo.title}}">
+    <meta property="og:description" content="{{page.seo.meta-description}}">
+    <meta property="og:image" content="{{page.seo.featured-image_path}}">
+    <meta property="og:url" content="{{page.url}}">
+    <meta name="twitter:card" content="{{page.seo.meta-description}}">
+    <meta name="og:site_name" content="{{site.data.settings.general.site-name}}">
+    <!-- end of meta tags -->
+
+    <!-- Google Fonts -->
+    {{site.data.settings.technical.google-fonts_embed}}
+
+    <!-- Gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
+
+    <!-- Font Awesome Version 5 for Icons  -->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" media="print" onload="this.media='all'; this.onload=null;"/>
+
+    <!-- Fancybox Popup for lightbox galleries   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" media="print" onload="this.media='all'; this.onload=null;"/>
+
+    <!-- our own custom stylesheet -->
+    <link rel="stylesheet" href="/assets/style.css"/>
+
+    <!-- Google Analytics -->
+    <!-- paste your google analytics code here -->
+    {{site.data.settings.technical.google-analytics_embed}} 
+    <!-- end google analytics -->   
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+
+</head>
+

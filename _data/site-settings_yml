@@ -1,0 +1,48 @@
+general:
+  site-name: Your Website Name
+  form-email: hello@kelapacreative.com
+  logo_path:
+  logo-max-width: 400px
+  logo-text: YOUR LOGO
+  show-back-to-top-button: true
+technical:
+  google-fonts_embed: >-
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    rel="stylesheet">
+  google-analytics_embed:
+  stuff-for-head_embed:
+  body-scripts_embed:
+  cookie-script-banner: false
+  tracking-scripts-after-cookie-acceptance_embed:
+social:
+  facebook_url: 'https://www.facebook.com/youraccount'
+  instagram_url: 'https://www.instagram.com/eyesofanomad'
+  youtube_url: 'https://www.youtube.com/youraccount'
+  linkedin_url: 'https://www.linkedin.com/youraccount'
+  instagram_embed: >-
+    <!-- LightWidget WIDGET --><script
+    src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+    src="https://cdn.lightwidget.com/widgets/ecc60fd2e65d50aa82fc4e5148cb8850.html"
+    scrolling="no" allowtransparency="true" class="lightwidget-widget"
+    style="width:100%;border:0;overflow:hidden;"></iframe>
+design:
+  bg-light_color: '#eeeeef'
+  bg-dark_color: '#3c3c3c'
+  bg-featured_color: '#b5b5bc'
+  text_color: '#3c3c3c'
+  text-font-family: '''Lora'', sans-serif'
+  text-heading_color: '#3c3c3c'
+  text-heading-font-family: '''Lato'', serif'
+  text-heading-font-weight: 300
+  text-heading-letter-spacing: 1px
+  text-link-font-family: '''Lato'', sans-serif'
+  text-link-hover_color: '#be9a85'
+  form_color: '#eeeeef'
+  footer-background_color: '#eeeeef'
+  footer-text_color: '#3c3c3c'
+  banner-text-size: 3rem
+  custom-css_code_block:
+_comments:
+  general:
+    logo-max-width: ie 300px
