@@ -9,7 +9,3 @@
 @tailwind utilities;
 
 /* Custom CSS */
-
-h1, h2, h3, h4, h5, h6, p, nav, div, section {
-    border: 1px solid lightgray;
-}
