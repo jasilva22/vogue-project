@@ -19,9 +19,9 @@ _array_structures:
     icon: article
     value:
       _id: text_img_right
-      text_block_right.text_html: Write text here
-      text_block_right.image_path: 
-      text_block_right.text-image-alt: This is an alt tag
+      text_html: Write text here
+      image_path: 
+      text-image-alt: This is an alt tag
     
 _select_data:
   video-types:
