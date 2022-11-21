@@ -49,4 +49,4 @@ _array_structures:
       _id: text_block_columns
       title:
       text_html: Write text here (col-1)
-      text_html: Write more text here (col-2)
+      text2_html: Write more text here (col-2)
