@@ -7,15 +7,21 @@ date: 2022-11-19
 featured-image_path: https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
 featured-image-alt: forest with river
 text_block_right: 
- text_html: >- 
+ text_html: >-
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore reprehenderit repellendus rem nesciunt accusamus id maiores! Expedita numquam quidem, assumenda dolores asperiores quas vitae minima doloribus ipsum est, quis voluptas?</p>
  image_path: https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
  text-image-alt: same forest with river
 text_block_left: 
- text_html: >- 
+ text_html: >-
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore reprehenderit repellendus rem nesciunt accusamus id maiores! Expedita numquam quidem, assumenda dolores asperiores quas vitae minima doloribus ipsum est, quis voluptas?</p>
  image_path: https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
  text-image-alt: lalala
+text_block_column_1:
+ text_html: >-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit sit quisquam possimus rerum placeat, dicta quasi optio alias amet doloremque ipsum obcaecati odit asperiores aliquid totam voluptate natus vel a laudantium deleniti recusandae deserunt perspiciatis iure? Voluptates eum id commodi autem distinctio magni laudantium. Recusandae doloremque provident sapiente porro, magnam pariatur, nihil commodi ab debitis modi quo explicabo voluptate consectetur quasi repudiandae unde illum earum magni natus harum mollitia amet, blanditiis esse expedita! Veniam, dignissimos quisquam nesciunt suscipit nobis earum natus facere quos eaque doloremque, fugiat aspernatur ut tenetur!</p>
+text_block_column_2:
+ text_html: >-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit sit quisquam possimus rerum placeat, dicta quasi optio alias amet doloremque ipsum obcaecati odit asperiores aliquid totam voluptate natus vel a laudantium deleniti recusandae deserunt perspiciatis iure? Voluptates eum id commodi autem distinctio magni laudantium. Recusandae doloremque provident sapiente porro, magnam pariatur, nihil commodi ab debitis modi quo explicabo voluptate consectetur quasi repudiandae unde illum earum magni natus harum mollitia amet, blanditiis esse expedita! Veniam, dignissimos quisquam nesciunt suscipit nobis earum natus facere quos eaque doloremque, fugiat aspernatur ut tenetur!</p>
 video_url: https://www.youtube.com/embed/7lvXbfNBIQg
 gallery_block:
  - image_path: https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1748&q=80
@@ -56,6 +62,13 @@ seo:
     </div>
 </section>
 
+<!------------- Call to Action ----------------->
+
+<section class="p-8 text-center">
+    <p class="inline-block pr-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    <a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white sm:mt-4"> Join the club</a>
+</section>
+
 <!------------ Text Block - Image Right ----------->
 <section class="grid md:grid-cols-2 p-5 items-center">
     <div class="leading-loose p-3">
@@ -82,8 +95,12 @@ seo:
         <h3 class="text-center pt-3 pb-3 font-semibold">Adventures in the Forest</h3>
     </div>
     <div class="grid md:grid-cols-2 leading-loose">
-        <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum veniam sequi, maxime quae, maiores nesciunt accusantium quasi perspiciatis quam officia dolores non quibusdam odit ipsa nisi et, voluptate a officiis inventore modi possimus dolore omnis. Itaque dolore quia unde vero sapiente explicabo dicta voluptatem sequi quo. Quo consequuntur minima doloribus numquam ipsa sed eaque modi! Id, doloribus minus ratione consequuntur, et ex corrupti provident eum repudiandae magnam aliquam recusandae aperiam veritatis, asperiores cum molestiae odio consequatur laborum. Voluptatum eius ipsa quibusdam nam, ab minima cumque eaque velit explicabo aut.</p>
-        <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam suscipit sit quisquam possimus rerum placeat, dicta quasi optio alias amet doloremque ipsum obcaecati odit asperiores aliquid totam voluptate natus vel a laudantium deleniti recusandae deserunt perspiciatis iure? Voluptates eum id commodi autem distinctio magni laudantium. Recusandae doloremque provident sapiente porro, magnam pariatur, nihil commodi ab debitis modi quo explicabo voluptate consectetur quasi repudiandae unde illum earum magni natus harum mollitia amet, blanditiis esse expedita! Veniam, dignissimos quisquam nesciunt suscipit nobis earum natus facere quos eaque doloremque, fugiat aspernatur ut tenetur!</p>
+        <div>
+            <p>{{page.text_block_column_1.text_html}}</p>
+        </div>
+        <div>
+            <p>{{page.text_block_column_2.text_html}}</p>
+        </div>
     </div>
 </section>
 
