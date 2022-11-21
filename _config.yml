@@ -6,9 +6,8 @@ _array_structures:
     icon: article
     value: 
      _id: cta
-     title: Call to Action
-     heading: This is a heading
-     subtitle: This is a subtitle  
+     text: Call to Action Text
+     button-title: Button Label
   - label: Banner Image
     icon: article
     value: 
