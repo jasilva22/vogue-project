@@ -16,8 +16,9 @@ _array_structures:
     icon: article
     value:
       _id: blog_info
-      category:
       title:
+      category:
+      heading:
       author:
       date:
   - label: Call to Action
