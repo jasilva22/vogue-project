@@ -59,6 +59,6 @@ _array_structures:
   - label: Gallery
     icon: article
     value:
-      _id: gallery
+      _id: gallery_block
       image_path:
-      alt:
+      text-image-alt: This is an alt tag
