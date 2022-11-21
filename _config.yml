@@ -7,7 +7,7 @@ _array_structures:
     value: 
      _id: cta
      cta-text_html: Call to Action Text
-     cat-button-title: Button Label
+     cta-button-title: Button Label
   - label: Banner Image
     icon: article
     value: 
