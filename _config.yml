@@ -55,4 +55,4 @@ _array_structures:
     value:
       _id: video
       title:
-      video_url:
+      video_path:
