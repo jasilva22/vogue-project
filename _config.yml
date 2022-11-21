@@ -56,3 +56,9 @@ _array_structures:
       _id: video
       title:
       video_path:
+  - label: Gallery
+    icon: article
+    value:
+      _id: gallery
+      image_path:
+      alt:
