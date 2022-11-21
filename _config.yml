@@ -15,6 +15,13 @@ _array_structures:
       featured-image_path: 
       featured-image-alt: This is an alt tag
       heading: This is a heading
+  - label: Text w/Image Right
+    icon: article
+    value:
+      _id: text_img_right
+      text_block_right.text_html: Write text here
+      text_block_right.image_path: 
+      text_block_right.text-image-alt: This is an alt tag
     
 _select_data:
   video-types:
