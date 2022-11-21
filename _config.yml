@@ -43,3 +43,10 @@ _array_structures:
       text_html: Write text here
       image_path: 
       text-image-alt: This is an alt tag
+  - label: Text w/Columns
+    icon: article
+    value:
+      _id: text_block_columns
+      title:
+      text_html: Write text here (col-1)
+      text_html: Write more text here (col-2)
