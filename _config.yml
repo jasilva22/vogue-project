@@ -65,3 +65,11 @@ _array_structures:
       image:
         - image_path:
           alt:
+  - label: Text Flip
+    icon: article
+    value:
+      _id: text_flip
+      position:
+      image_path:
+      text-image-alt:
+      
