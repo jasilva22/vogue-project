@@ -12,6 +12,14 @@ page_blocks: []
 
 _array_structures:
  page_blocks:
+  - label: Blog Info
+    icon: article
+    value:
+      _id: blog_info
+      category:
+      title:
+      author:
+      date:
   - label: Call to Action
     icon: article
     value: 
