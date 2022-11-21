@@ -78,8 +78,8 @@ _array_structures:
     value:
       _id: text_flip
       position:
-        - right
-        - left
+        right
+        left
       image_path:
       text-image-alt:
       
