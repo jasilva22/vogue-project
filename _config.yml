@@ -1,28 +1,3 @@
-page_blocks: []
-
-_array_structures:
- page_blocks:
-  - label: Call to Action
-    icon: article
-    value: 
-     _id: cta
-     cta-text_html: Call to Action Text
-     cta-button-title: Button Label
-  - label: Banner Image
-    icon: article
-    value: 
-      _id: banner
-      featured-image_path: 
-      featured-image-alt: This is an alt tag
-      heading: This is a heading
-  - label: Text w/Image Right
-    icon: article
-    value:
-      _id: text_img_right
-      text_html: Write text here
-      image_path: 
-      text-image-alt: This is an alt tag
-    
 _select_data:
   video-types:
       - vimeo
@@ -32,3 +7,31 @@ _select_data:
       - p-5: Padded Sm
       - p-1: Padded Md
       - p-15: Padded Lg
+
+page_blocks: []
+
+_array_structures:
+ page_blocks:
+  - label: Call to Action
+    icon: article
+    value: 
+     _id: cta
+     title:
+     cta-text_html: Call to Action Text
+     cta-button-title: Button Label
+  - label: Banner Image
+    icon: article
+    value: 
+      _id: banner
+      title:
+      featured-image_path: 
+      featured-image-alt: This is an alt tag
+      heading: This is a heading
+  - label: Text w/Image Right
+    icon: article
+    value:
+      _id: text_img_right
+      title:
+      text_html: Write text here
+      image_path: 
+      text-image-alt: This is an alt tag
