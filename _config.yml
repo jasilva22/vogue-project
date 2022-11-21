@@ -15,3 +15,13 @@ _array_structures:
       featured-image_path: 
       featured-image-alt: This is an alt tag
       heading: This is a heading
+    
+_select_data:
+  video-types:
+      - vimeo
+      - youtube
+      - self-hosted
+  section-styles:
+      - p-5: Padded Sm
+      - p-1: Padded Md
+      - p-15: Padded Lg
