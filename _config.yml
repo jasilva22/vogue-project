@@ -35,3 +35,11 @@ _array_structures:
       text_html: Write text here
       image_path: 
       text-image-alt: This is an alt tag
+  - label: Text w/Image Left
+    icon: article
+    value:
+      _id: text_img_left
+      title:
+      text_html: Write text here
+      image_path: 
+      text-image-alt: This is an alt tag
