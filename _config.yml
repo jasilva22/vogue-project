@@ -51,7 +51,7 @@ _array_structures:
       text_html: Write text here (col-1)
       text2_html: Write more text here (col-2)
   - label: Video
-    icon: article
+    icon: video_library
     value:
       _id: video
       title:
