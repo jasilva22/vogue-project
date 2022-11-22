@@ -81,6 +81,7 @@ _array_structures:
     icon: article
     value:
       _id: text_flip
+      title:
       position:
       image_path:
       text-image-alt: This is an alt tag
