@@ -54,7 +54,7 @@ _array_structures:
       column-size:
       text_html: Write text here for one column
       text2_html: Write more text here for 2 columns
-      text2_html: Write more text here for 3 columns
+      text3_html: Write more text here for 3 columns
   - label: Video
     icon: video_library
     value:
