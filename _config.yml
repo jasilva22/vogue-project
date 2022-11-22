@@ -1,3 +1,8 @@
+collections:
+  posts:
+    output: true
+    permalink: /posts/:slug
+    
 _select_data:
   video-types:
       - vimeo
@@ -15,15 +20,6 @@ page_blocks: []
 
 _array_structures:
  page_blocks:
-  - label: Blog Info
-    icon: article
-    value:
-      _id: blog_info
-      title:
-      category:
-      heading:
-      author:
-      date:
   - label: Call to Action
     icon: article
     value: 

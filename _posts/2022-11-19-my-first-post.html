@@ -1,14 +1,12 @@
 ---
 layout: post-layout
 position: left
+title: my second post
+category: travel
+author: bea author
+date: 2022-11-19
+image_path: https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
 page_blocks:
-   -
-      _id: blog_info
-      title: Blog info
-      category: travel
-      heading: my first blog
-      author: bea author
-      date: 2022-11-19 00:00:00
    -
       _id: banner
       title: Banner Image
@@ -114,23 +112,3 @@ seo:
    featured-image_path:
    hide-from-google:
 ---
-<section>
-	<h4> Related Posts </h4>
-	<div>
-
-		{% assign pageCategory = page.categories[0] %}
-		{% assign relevant = site.categories[pageCategory] | where_exp:"post","post.url != page.url" %}
-  		{% for post in relevant limit:3 %}
-
-      		<a href="{{post.url}}">
-        		<div class="bg-image" style="background-image:url({{post.image_path}})"> </div>
-        		<span class="author">by {{post.author}}</span> //
-        		<span class="author"> {{post.date | date: "%m.%d.%Y" }} </span>
-        		<h3> {{post.title}} </h3>
-      		</a>
-      		
-  		{% endfor %}
-  		
-	</div>
-
-</section>
