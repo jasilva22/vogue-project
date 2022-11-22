@@ -1,4 +1,10 @@
 <section class="p-8 text-center">
-    <p class="inline-block pr-10">{{block.cta-text_html}}</p>
+    <p class="inline-block pr-10">
+        {% if block.cta-text_html %}
+            {{ block.cta-text_html }}
+        {% else %}
+            {{page.cta-text_html}}
+        {% endelse %}
+    </p>
     <a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white sm:mt-4">{{block.cta-button-title}}</a>
 </section>
