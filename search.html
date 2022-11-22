@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<section>
+<section class="p-6">
 
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="Search blog posts..">
-<ul id="results-container"></ul>
-
+<input class="mt-1 block px-3 py-2 bg-white border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-gray-600 focus:ring-1 focus:ring-gray-400" type="text" id="search-input" placeholder="Search blog posts..">
+<div id="results-container"></div>
+<!-- if want a 3 column div do this: <div id="results-container grid grid-cols-3"></div> -->
 <!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 
@@ -18,8 +18,10 @@ var sjs = SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
-    searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
-
+    // searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+    searchResultTemplate: '<div class="m-4"><a href="{{site.url}}{url}" class="block rounded bg-gray-400 p-4 text-white hover:bg-gray-600"><h2>{title}</h2><p class="text-xs uppercase">{categories}</p></a></div>',
+    noResultsText: 'Nothing found, try again!',
+    limit: 6,
+    fuzzy: false
   })
-  
-  </script>
+</script>

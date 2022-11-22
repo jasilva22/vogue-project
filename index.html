@@ -13,17 +13,26 @@ seo:
  featured-image_path:
  hide-from-google:
 ---
-<section> 
-    <div class="p-12 pt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+{% include /blocks/cta.html %}
+
+
+<section class="container mx-auto px-4 pb-12"> 
+    <h2 class="text-center">Today's Stories</h2>
+    <div class="pt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
 
     {% for post in site.posts %}
         <a href="{{post.url}}">
-            <h1 class="title text-center">{{post.title}}</h1>
-            <div class="bg-image">
-            <img src="{{post.image_path}}" alt="trees" class="object-cover w-auto h-[40vh]"></div>
-            <span class="author">by {{post.author}}</span> //
-            <span class="author"> {{post.date | date: "%m.%d.%Y" }} </span>
-        </a>
+            <div class="bg-image pb-2">
+                <img src="{{post.featured-image_path}}" alt="trees" class="object-cover w-auto h-[40vh]">
+            </div>
+            <p class="pt-2 font-thin italic text-rose-900">{{post.categories | join: ' / '}}</p>
+            <h1 class="font-bold pt-5 uppercase">{{post.title}}</h1>
+            <p class="pt-4">{{post.description}}</p>
+            <p class="underline pt-8">Read More</p>
+            <!-- <span class="author">by {{post.author}}</span> - 
+            <span class="author"> {{post.date | date: "%m.%d.%Y" }} </span> -->
+        </a>        
     {% endfor %}
 
     </div>

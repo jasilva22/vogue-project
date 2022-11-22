@@ -1,6 +1,6 @@
 <section class="">
 	<h4 class="text-center"> Related Posts </h4>
-	<div class="p-12 pt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+	<div class="p-20 pt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
 
 		{% assign pageCategory = page.categories[0] %}
 		{% assign relevant = site.categories[pageCategory] | where_exp:"post","post.url != page.url" %}
@@ -8,7 +8,7 @@
 
       		<a href="{{post.url}}">
         		<div class="bg-image">
-                <img src="{{post.image_path}}" alt="trees" class="object-cover w-auto h-[40vh]"></div>
+                <img src="{{post.featured-image_path}}" alt="trees" class="object-cover w-auto h-[40vh]"></div>
         		<span class="author">by {{post.author}}</span> //
         		<span class="author"> {{post.date | date: "%m.%d.%Y" }} </span>
         		<h3> {{post.title}} </h3>
