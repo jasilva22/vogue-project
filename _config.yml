@@ -10,7 +10,7 @@ _select_data:
   image-positions:
       left: left
       right: right
-      
+
 page_blocks: []
 
 _array_structures:
@@ -81,9 +81,8 @@ _array_structures:
     icon: article
     value:
       _id: text_flip
-      image-position:
-        left: left
-        right: right
+      position:
       image_path:
-      text-image-alt:
+      text-image-alt: This is an alt tag
+      text_html: Write text here
       
