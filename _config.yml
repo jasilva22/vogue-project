@@ -7,9 +7,9 @@ _select_data:
       p-5: Padded Sm
       p-1: Padded Md
       p-15: Padded Lg
-  image-positions:
-      left: left
-      right: right
+  positions:
+      - left
+      - right
 
 page_blocks: []
 
