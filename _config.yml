@@ -2,7 +2,7 @@ collections:
   posts:
     output: true
     permalink: /posts/:slug
-    
+
 _select_data:
   video-types:
       - vimeo
@@ -68,6 +68,7 @@ _array_structures:
     icon: article
     value:
       _id: gallery_block
+      title:
       image:
         - image_path:
           alt: This is an alt tag
