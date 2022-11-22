@@ -13,3 +13,7 @@
 * {
     border: 1px solid lightgray;
 }
+
+.sticky-nav-fix {
+    margin-top: -168px;
+} 

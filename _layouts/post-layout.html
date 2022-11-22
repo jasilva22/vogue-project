@@ -3,12 +3,17 @@ layout: default
 ---
 <section class="">
     <div class="text-center font-light">
-        <p>{{page.category}}</p>
+        <p>{{page.categories[0]}}</p>
         <h1>{{page.title}}</h1>
         <p>by: {{page.author}}</p>
         <p>{{page.date | date: "%b %d, %Y"}}</p>
     </div>
+    <div>
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[50vh] bg-green-900">
+    </div>
  </section>
+
+ {% include socials.html %}
 
 <!-- this pulls in our blocks to the post layout -->
 {% for block in page.page_blocks %}
@@ -17,6 +22,6 @@ layout: default
 
 {% endfor %}
 
-{% include socials.html %}
+<!-- {% include socials.html %} -->
 
 {% include related.html %}
