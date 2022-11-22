@@ -4,10 +4,13 @@ _select_data:
       - youtube
       - self-hosted
   section-styles:
-      - p-5: Padded Sm
-      - p-1: Padded Md
-      - p-15: Padded Lg
-
+      p-5: Padded Sm
+      p-1: Padded Md
+      p-15: Padded Lg
+  image-positions:
+      left: left
+      right: right
+      
 page_blocks: []
 
 _array_structures:
@@ -78,9 +81,9 @@ _array_structures:
     icon: article
     value:
       _id: text_flip
-      position:
-        right
-        left
+      image-position:
+        left: left
+        right: right
       image_path:
       text-image-alt:
       
