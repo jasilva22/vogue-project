@@ -2,10 +2,15 @@
 layout: default
 title: Homepage 
 _id: cta
+date: 11/19/2022
 cta-text_html: >-
    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
    industry.</p>
 cta-button-title: Let's Go!
+featured-title: We're gonna wanna remember this
+featured-date: 11-22-2022
+featured-image_path: https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80
+featured-image_alt: coffee
 seo: 
  title: 
  meta-description:
@@ -14,14 +19,60 @@ seo:
  hide-from-google:
 ---
 
-{% include /blocks/cta.html %}
+<!-- include a call to action here -->
+<!-- {% include /blocks/cta.html %} -->
+
+<!-- banner w/overlay and white text centered -->
+<!-- <div class="relative h-[50vh]">
+    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[50vh]">
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-gray-800 opacity-70">
+        <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white"> Pineapple Society Hemp </h1>
+    </div>
+</div> -->
 
 
-<section class="container mx-auto px-4 pb-12"> 
-    <h2 class="text-center">Today's Stories</h2>
-    <div class="pt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+<!-- banner w/overlay and white text centered & button -->
+<div class="relative h-[40vh]">
+    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[40vh]">
+    <div class="absolute bottom-0 left-0 right-0 top-0 bg-gray-800 opacity-70">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white">
+            <p class="inline-block pr-10">
+                {% if block.cta-text_html %}
+                    {{ block.cta-text_html }}
+                {% else %}
+                    {{page.cta-text_html}}
+                {% endif %}
+            </p>
+            <a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white sm:mt-4 text-xl hover:bg-white hover:text-black">
+                {% if block.cta-button-title %}
+                    {{ block.cta-button-title }}
+                {% else %}
+                    {{page.cta-button-title}}
+                {% endif %}
+            </a>
+        </div>
+    </div>
+</div>
 
-    {% for post in site.posts %}
+<!-- magazine title/blurb section -->
+<section class="grid grid-cols-1 md:grid-cols-2 border-y border-black h-[50vh]">
+    <div class="md:border-r border-black container mx-auto px-12 pt-12">
+        <h1 class="uppercase font-bold text-3xl md:text-5xl object-fit">NotsoVogue<br>Magazine</h1>
+        <!-- <p class="editable">Issue # {{page.issue}}</p> -->
+        <p class="editable font-light italic">Issue # </p>
+        <p class="font-thin italic">{{page.date}}</p>
+    </div>
+    <div class="container mx-auto px-12 flex items-center">
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa laboriosam repellat, iusto reprehenderit tempore non sequi corporis sunt esse odio dolor blanditiis tempora similique, sed ab minima eligendi laudantium ipsa velit eaque quia, sint laborum. Cupiditate ducimus eum porro qui at, eveniet accusamus pariatur quam minima molestias in recusandae mollitia laborum illum iusto ab, voluptatibus accusantium corporis optio expedita aut unde, quasi quidem sit.</p>
+    </div>
+</section>
+
+<!-- today's stories section - we loop thru our posts and output them here but limit to the three most recent -->
+<section class="px-10 bg-white"> 
+    <h2 class="text-center pt-8 pb-8 text-xl">Today's Stories</h2>
+    <div class="pb-8 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    {% for post in site.posts limit: 3 %}
         <a href="{{post.url}}">
             <div class="bg-image pb-2">
                 <img src="{{post.featured-image_path}}" alt="trees" class="object-cover w-auto h-[40vh]">
@@ -30,12 +81,26 @@ seo:
             <h1 class="font-bold pt-5 uppercase">{{post.title}}</h1>
             <p class="pt-4">{{post.description}}</p>
             <p class="underline pt-8">Read More</p>
-            <!-- <span class="author">by {{post.author}}</span> - 
-            <span class="author"> {{post.date | date: "%m.%d.%Y" }} </span> -->
         </a>        
     {% endfor %}
-
     </div>
 </section>
 
-{% include /blocks/cta.html %}
+<!-- article/img/quote/img section -->
+<section class="border-t border-black grid md:grid-cols-2 bg-amber-50 items-center">
+    <div class="border-r border-black row-span-5">
+        <h2 class="text-2xl font-semibold">{{page.featured-title}}</h2>
+        <p>{{page.featured-date}}</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
+    </div>
+    <div class="row-span-2 border-b border-black">
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh] bg-amber-50">
+    </div>
+    <div class="row-span-1 border-b border-black p-12">
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita nobis, amet voluptate soluta assumenda dicta reprehenderit. Id nihil fuga distinctio. Debitis velit autem at."</p>
+    </div>
+    <div class="row-span-2">
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh] bg-amber-50">
+    </div>
+  </section>

@@ -1,5 +1,4 @@
-
-<header class="p-5">
+<!-- <header class="p-5">
     <div class="grid justify-center pb-6">
       <a href="/index.html" class="logo text-8xl font-extralight"> LOGO </a>
     </div> 
@@ -8,9 +7,45 @@
       <a href="#" class="p-2 px-10">link 2</a>
       <a href="#" class="p-2 px-10">link 3</a>
       <a href="#" class="p-2 px-10">link 4</a>
-      <!-- <a href="#" class="p-2 px-10">link 5</a>
-      <a href="#" class="p-2 px-10">link 6</a>
-      <a href="#" class="p-2 px-10">link 7</a>
-      <a href="#" class="p-2 px-10">link 8</a> -->
     </div>
 </header>
+ -->
+
+ <!-- testing header -->
+ <header class="">
+   <div class="flex grid grid-cols-2 items-center pt-4 px-4">
+      <div class="grid justify-left pb-8">
+        <a href="/index.html" class="logo text-6xl font-extralight"> LOGO </a>
+      </div>
+
+      <section class="grid justify-end pb-6">
+
+        <!-- HTML elements for search -->
+        <input class="mt-1 block px-3 py-2 bg-white border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-gray-600 focus:ring-1 focus:ring-gray-400" type="text" id="search-input" placeholder="Search blog posts..">
+        <div id="results-container"></div>
+        <!-- if want a 3 column div do this: <div id="results-container grid grid-cols-3"></div> -->
+        <!-- or without installing anything -->
+        <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+        
+      </section>
+      <script>
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            // searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+            searchResultTemplate: '<div class="m-4"><a href="{{site.url}}{url}" class="block rounded bg-gray-400 p-4 text-white hover:bg-gray-600"><h2>{title}</h2><p class="text-xs uppercase">{categories}</p></a></div>',
+            noResultsText: 'Nothing found, try again!',
+            limit: 6,
+            fuzzy: false
+          })
+      </script>
+  </div> 
+  <div class="text-center font-light p-4 border-y border-black">
+    <a href="#" class="p-2 px-10">link 1</a>
+    <a href="#" class="p-2 px-10">link 2</a>
+    <a href="#" class="p-2 px-10">link 3</a>
+    <a href="#" class="p-2 px-10">link 4</a>
+  </div>
+</header>
+

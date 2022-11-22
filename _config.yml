@@ -15,6 +15,17 @@ _select_data:
   positions:
       - left
       - right
+  column-sizes:
+      grid-cols-1: 1
+      grid-cols-2: 2
+      grid-cols-3: 3
+  
+_input:
+  grid_width:
+    type: select
+    options:
+      values:
+        1: 1 Column
 
 page_blocks: []
 
@@ -35,27 +46,12 @@ _array_structures:
       featured-image_path: 
       featured-image-alt: This is an alt tag
       heading: This is a heading
-  - label: Text w/Image Right
-    icon: article
-    value:
-      _id: text_img_right
-      title:
-      text_html: Write text here
-      image_path: 
-      text-image-alt: This is an alt tag
-  - label: Text w/Image Left
-    icon: article
-    value:
-      _id: text_img_left
-      title:
-      text_html: Write text here
-      image_path: 
-      text-image-alt: This is an alt tag
   - label: Text w/Columns
     icon: article
     value:
       _id: text_block_columns
       title:
+      column-size:
       text_html: Write text here (col-1)
       text2_html: Write more text here (col-2)
   - label: Video
@@ -64,6 +60,7 @@ _array_structures:
       _id: video
       title:
       video_path:
+      video-type: 
   - label: Gallery
     icon: article
     value:
