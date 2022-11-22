@@ -72,11 +72,9 @@ _array_structures:
     icon: article
     value:
       _id: gallery_block
-      image_path:
-      text-image-alt: This is an alt tag
       image:
         - image_path:
-          alt:
+          alt: This is an alt tag
   - label: Text Flip
     icon: article
     value:
