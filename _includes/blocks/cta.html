@@ -15,7 +15,7 @@
     </a>
 </section> -->
 
-<section class="text-center p-8">
+<!-- <section class="text-center p-8 flex-col flex">
     <p class="">{% if block.cta-text_html %}{{ block.cta-text_html }}{% else %}{{page.cta-text_html}}{% endif %}
     <a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white sm:mt-4">
         {% if block.cta-button-title %}
@@ -24,4 +24,18 @@
             {{page.cta-button-title}}
         {% endif %}
     </a></p>
+</section> -->
+
+
+<!-- trying it in divs -->
+<section class="text-center p-8 md:flex items-center justify-center">
+    <div>
+    <p class="md:mr-16">{% if block.cta-text_html %}{{ block.cta-text_html }}{% else %}{{page.cta-text_html}}{% endif %}</p></div>
+    <div><a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white mt-4 md:mt-0 hover:bg-teal-700 hover:text-white">
+        {% if block.cta-button-title %}
+            {{ block.cta-button-title }}
+        {% else %}
+            {{page.cta-button-title}}
+        {% endif %}
+    </a></div>
 </section>

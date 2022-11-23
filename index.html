@@ -3,7 +3,7 @@ layout: default
 title: Homepage 
 _id: cta
 date: 11/19/2022
-cta-text_html: Lorem Ipsum is simply dummy text
+cta-text_html: Lorem Ipsum is simply dummy text that we use...interested?
 cta-button-title: Let's Go!
 featured-title: We're gonna wanna remember this
 featured-date: 11-22-2022
@@ -26,7 +26,7 @@ seo:
         <h1 class="uppercase font-bold text-3xl md:text-5xl object-fit">NotsoVogue<br>Magazine</h1>
         <!-- <p class="editable">Issue # {{page.issue}}</p> -->
         <p class="editable font-light italic">Issue # </p>
-        <p class="font-thin italic">{{page.date}}</p>
+        <p class="editable font-thin italic">{{page.date}}</p>
     </div>
     <div class="container mx-auto px-12 flex items-center">
         <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa laboriosam repellat, iusto reprehenderit tempore non sequi corporis sunt esse odio dolor blanditiis tempora similique, sed ab minima eligendi laudantium ipsa velit eaque quia, sint laborum. Cupiditate ducimus eum porro qui at, eveniet accusamus pariatur quam minima molestias in recusandae mollitia laborum illum iusto ab, voluptatibus accusantium corporis optio expedita aut unde, quasi quidem sit.</p>
@@ -53,12 +53,14 @@ seo:
 </section>
 
 <!-- article/img/quote/img section -->
-<section class="border-t border-black grid md:grid-cols-2 items-center">
-    <div class="md:border-r border-black row-span-5">
-        <h2 class="text-2xl font-semibold">{{page.featured-title}}</h2>
-        <p>{{page.featured-date}}</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
+<section class="border-t border-black grid md:grid-cols-2">
+    <div class="md:border-r border-black h-full row-span-5 grid items-center p-6">
+        <div class="">
+            <h2 class="text-2xl font-semibold pb-4">{{page.featured-title}}</h2>
+            <p class="italic font-thin pb-4">{{page.featured-date}}</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
+        </div>
     </div>
     <div class="row-span-2 border-b border-black">
         <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]">
