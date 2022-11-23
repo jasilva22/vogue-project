@@ -1,35 +1,35 @@
 ---
 layout: default
-title: Homepage 
+title: Homepage
 _id: cta
 date: 11/19/2022
 cta-text_html: Lorem Ipsum is simply dummy text that we use...interested?
 cta-button-title: Let's Go!
 featured-title: We're gonna wanna remember this
-featured-date: 11-22-2022
-featured-image_path: https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80
+featured-date: 2022-11-22 00:00:00
+featured-image_path: >-
+ https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80
 featured-image_alt: coffee
-seo: 
- title: 
+seo:
+ title:
  meta-description:
  meta-keywords:
  featured-image_path:
  hide-from-google:
 ---
-
 <!-- include a call to action here -->
 {% include /blocks/cta.html %}
 
 <!-- magazine title/blurb section -->
 <section class="grid grid-cols-1 md:grid-cols-2 border-y border-black h-[50vh]">
     <div class="md:border-r border-black container mx-auto px-12 pt-12">
-        <h1 class="uppercase font-bold text-3xl md:text-5xl object-fit">NotsoVogue<br>Magazine</h1>
+        <h1 class="uppercase font-bold text-3xl md:text-5xl object-fit">NotsoVogue<br />Magazine</h1>
         <!-- <p class="editable">Issue # {{page.issue}}</p> -->
         <p class="editable font-light italic">Issue # </p>
         <p class="editable font-thin italic">{{page.date}}</p>
     </div>
     <div class="container mx-auto px-12 flex items-center">
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa laboriosam repellat, iusto reprehenderit tempore non sequi corporis sunt esse odio dolor blanditiis tempora similique, sed ab minima eligendi laudantium ipsa velit eaque quia, sint laborum. Cupiditate ducimus eum porro qui at, eveniet accusamus pariatur quam minima molestias in recusandae mollitia laborum illum iusto ab, voluptatibus accusantium corporis optio expedita aut unde, quasi quidem sit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa laboriosam repellat, iusto reprehenderit tempore non sequi corporis sunt esse odio dolor blanditiis tempora similique, sed ab minima eligendi laudantium ipsa velit eaque quia, sint laborum. Cupiditate ducimus eum porro qui at, eveniet accusamus pariatur quam minima molestias in recusandae mollitia laborum illum iusto ab, voluptatibus accusantium corporis optio expedita aut unde, quasi quidem sit.</p>
     </div>
 </section>
 
@@ -41,7 +41,7 @@ seo:
     {% for post in site.posts limit: 3 %}
         <a href="{{post.url}}">
             <div class="bg-image pb-2">
-                <img src="{{post.featured-image_path}}" alt="trees" class="object-cover w-auto h-[40vh]">
+                <img src="{{post.featured-image_path}}" alt="trees" class="object-cover w-auto h-[40vh]" />
             </div>
             <p class="pt-2 font-thin italic text-rose-900">{{post.categories | join: ' / '}}</p>
             <h1 class="font-bold pt-5 uppercase">{{post.title}}</h1>
@@ -63,12 +63,12 @@ seo:
         </div>
     </div>
     <div class="row-span-2 border-b border-black">
-        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]">
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]" />
     </div>
     <div class="row-span-1 border-b border-black p-12">
         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita nobis, amet voluptate soluta assumenda dicta reprehenderit. Id nihil fuga distinctio. Debitis velit autem at."</p>
     </div>
     <div class="row-span-2">
-        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]">
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]" />
     </div>
   </section>
