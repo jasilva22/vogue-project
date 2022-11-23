@@ -1,26 +1,26 @@
 <!-- testing header -->
  <header class="">
-   <section class="grid grid-cols-2 items-center pt-4 px-4">
+   <div class="grid grid-cols-2 items-center pt-4 px-12">
       <div class="grid justify-left pb-8">
-        <a href="/index.html" class="logo text-6xl font-extralight hover:text-teal-700"> LOGO </a>
+        <a href="/index.html" class="logo text-6xl font-extralight hover:text-cyan-600"> LOGO </a>
       </div>
 
       <div class="grid justify-end pb-6">
-        <a href="/search.html">
-          <!-- <span><i class="fa-light fa-magnifying-glass text-2xl"></i></span> -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-7 h-7 hover:text-teal-700">
+        <a href="/search.html" class="pr-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-8 h-8 md:w-10 md:h-10 hover:text-cyan-600">
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>
         </a>
 
       </div>
-  </section> 
+    </div> 
 
-  <div class="text-center font-light p-4 border-y border-black">
+  <div class="flex items-center md:justify-center border-y border-black md:overflow-x-auto overflow-x-scroll md:flex-wrap flex-nowrap font-light p-2">
     {% for item in site.archives %}
-      <a href="{{item.url}}" class="uppercase font-extralight p-2 px-8 hover:text-gray-400">{{item.title}}</a>
+     
+        <a href="{{item.url}}" class="uppercase font-extralight p-2 px-8 inline-block hover:text-gray-400">{{item.title}}</a>
+    
     {% endfor %}
+
   </div>
-
 </header>
-

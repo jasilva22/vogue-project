@@ -1,8 +1,10 @@
 <footer class="border-t border-black">
-  <div class="md:border-r border-black h-full grid grid-cols-2 md:grid-cols-3 items-center">  
+  <div class="h-full grid grid-cols-2 md:grid-cols-3 items-center">  
     <!-- column -->
       <div class="grid items-center justify-center border-r border-black h-full">
-        <h2 class="logo uppercase"> Logo </h2>
+        <a href="/index.html">
+          <h2 class="logo uppercase text-xl"> Logo </h2>
+        </a>
       </div>
     
       <!-- column -->
@@ -11,13 +13,14 @@
       </div>
     
       <!-- column -->
-      <div class="p-12 md:border-l border-black">
+      <div class="p-10 md:border-l border-black items-center">
         <h4 class="uppercase"> Categories </h4>
         <nav class="">
-          <a href="#" class="block"> Travel </a>
-          <a href="#" class="block"> Forest </a>
-          <a href="#" class="block"> Consectetur </a>
-          <a href="#" class="block"> Ut enim ad </a>
+          {% for item in site.archives | where: "nav-bar" == true limit: 5 %}
+     
+            <a href="{{item.url}}" class="font-extralight block hover:text-gray-400">{{item.title}}</a>
+    
+          {% endfor %}
         </nav>
       </div>
   </div>

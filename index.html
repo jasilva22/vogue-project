@@ -7,9 +7,12 @@ cta-text_html: Lorem Ipsum is simply dummy text that we use...interested?
 cta-button-title: Let's Go!
 featured-title: We're gonna wanna remember this
 featured-date: 11/22/2022
-featured-image_path: >-
- https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80
-featured-image_alt: coffee
+featured-image1_path: >-
+ https://images.unsplash.com/photo-1523606772308-64a28db0ef2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80
+featured-image1_alt: catching the gnar
+featured-image2_path: >-
+ https://images.unsplash.com/photo-1554235518-c4170f5deebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80
+featured-image2_alt: surfers on beach
 seo:
  title:
  meta-description:
@@ -23,18 +26,18 @@ seo:
 <!-- magazine title/blurb section -->
 <section class="grid grid-cols-1 md:grid-cols-2 border-y border-black h-[50vh]">
     <div class="md:border-r border-black container mx-auto px-12 pt-12">
-        <h1 class="uppercase font-bold text-3xl md:text-5xl object-fit">NotsoVogue<br />Magazine</h1>
+        <h1 class="editable uppercase font-bold text-3xl md:text-5xl object-fit">Not<span class="text-cyan-600">so</span>Vogue<br />Magazine</h1>
         <!-- <p class="editable">Issue # {{page.issue}}</p> -->
-        <p class="editable font-light italic">Issue # </p>
-        <p class="editable font-thin italic">{{page.date}}</p>
+        <p class="editable font-light italic mt-12">Issue # </p>
+        <p class="editable font-thin italic mt-1">{{page.date}}</p>
     </div>
     <div class="container mx-auto px-12 flex items-center">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa laboriosam repellat, iusto reprehenderit tempore non sequi corporis sunt esse odio dolor blanditiis tempora similique, sed ab minima eligendi laudantium ipsa velit eaque quia, sint laborum. Cupiditate ducimus eum porro qui at, eveniet accusamus pariatur quam minima molestias in recusandae mollitia laborum illum iusto ab, voluptatibus accusantium corporis optio expedita aut unde, quasi quidem sit.</p>
+        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus culpa laboriosam repellat, iusto reprehenderit tempore non sequi corporis sunt esse odio dolor blanditiis tempora similique, sed ab minima eligendi laudantium ipsa velit eaque quia, sint laborum. Cupiditate ducimus eum porro qui at, eveniet accusamus pariatur quam minima molestias in recusandae mollitia laborum illum iusto ab, voluptatibus accusantium corporis optio expedita aut unde, quasi quidem sit.</p>
     </div>
 </section>
 
 <!-- today's stories section - we loop thru our posts and output them here but limit to the three most recent -->
-<section class="px-10 bg-white"> 
+<section class="px-12 bg-white"> 
     <h2 class="text-center pt-8 pb-8 text-xl">Today's Stories</h2>
     <div class="pb-8 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
 
@@ -45,8 +48,8 @@ seo:
             </div>
             <p class="pt-2 font-thin italic text-rose-900">{{post.categories | join: ' / '}}</p>
             <h1 class="font-bold pt-5 uppercase">{{post.title}}</h1>
-            <p class="pt-4">{{post.description}}</p>
-            <p class="underline pt-8">Read More</p>
+            <p class="pt-4 pb-8">{{post.description}}</p>
+            <span class="border-b border-black hover:border-gray-400 pt-8 hover:text-gray-400 font-light">Read More</span>
         </a>        
     {% endfor %}
     </div>
@@ -54,21 +57,24 @@ seo:
 
 <!-- article/img/quote/img section -->
 <section class="border-t border-black grid md:grid-cols-2">
-    <div class="md:border-r border-black h-full row-span-5 grid items-center p-6 md:p-16">
+    <div class="md:border-r border-black h-full row-span-5 grid items-center p-6 md:p-12">
         <div class="p-6 md:p-0">
-            <h2 class="text-2xl font-semibold pb-4">{{page.featured-title}}</h2>
-            <p class="italic font-thin pb-4">{{page.featured-date}}</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
+            <h2 class="text-2xl font-semibold pb-4 editable">{{page.featured-title}}</h2>
+            <p class="italic font-thin pb-4 editable">{{page.featured-date}}</p>
+            <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
+            <p class="editable">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
         </div>
     </div>
     <div class="row-span-2 md:border-b md:border-black pt-6 md:pt-0">
-        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]" />
+        <img src="{{page.featured-image1_path}}" alt="{{page.featured-image1-alt}}" class="object-cover w-full h-[40vh]" />
     </div>
     <div class="row-span-1 border-b border-black p-12 md:block hidden">
         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita nobis, amet voluptate soluta assumenda dicta reprehenderit. Id nihil fuga distinctio. Debitis velit autem at."</p>
     </div>
     <div class="row-span-2 md:block hidden">
-        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]" />
+        <img src="{{page.featured-image2_path}}" alt="{{page.featured-image2-alt}}" class="object-cover w-full h-[40vh]" />
     </div>
   </section>
+
+  <!-- include a newsletter signup here -->
+{% include /blocks/newsletter.html %}
