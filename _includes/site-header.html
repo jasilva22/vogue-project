@@ -1,37 +1,26 @@
 <!-- testing header -->
  <header class="">
-   <div class="grid grid-cols-2 items-center pt-4 px-4">
+   <section class="grid grid-cols-2 items-center pt-4 px-4">
       <div class="grid justify-left pb-8">
         <a href="/index.html" class="logo text-6xl font-extralight hover:text-teal-700"> LOGO </a>
       </div>
 
-      <section class="grid justify-end pb-6">
+      <div class="grid justify-end pb-6">
+        <a href="/search.html">
+          <!-- <span><i class="fa-light fa-magnifying-glass text-2xl"></i></span> -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-7 h-7 hover:text-teal-700">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </a>
 
-        <!-- HTML elements for search -->
-        <input class="mt-1 block px-3 py-2 bg-white border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-gray-600 focus:ring-1 focus:ring-gray-400" type="text" id="search-input" placeholder="Search blog posts..">
-        <div id="results-container"></div>
-        <!-- if want a 3 column div do this: <div id="results-container grid grid-cols-3"></div> -->
-        <!-- or without installing anything -->
-        <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-        
-      </section>
-      <script>
-        var sjs = SimpleJekyllSearch({
-            searchInput: document.getElementById('search-input'),
-            resultsContainer: document.getElementById('results-container'),
-            json: '/search.json',
-            // searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
-            searchResultTemplate: '<div class="m-4"><a href="{{site.url}}{url}" class="block rounded bg-gray-400 p-4 text-white hover:bg-gray-600"><h2>{title}</h2><p class="text-xs uppercase">{categories}</p></a></div>',
-            noResultsText: 'Nothing found, try again!',
-            limit: 6,
-            fuzzy: false
-          })
-      </script>
-  </div> 
+      </div>
+  </section> 
+
   <div class="text-center font-light p-4 border-y border-black">
     {% for item in site.archives %}
-      <a href="{{item.url}}" class="p-2 px-10 hover:text-gray-400">{{item.title}}</a>
+      <a href="{{item.url}}" class="uppercase font-extralight p-2 px-8 hover:text-gray-400">{{item.title}}</a>
     {% endfor %}
   </div>
+
 </header>
 

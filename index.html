@@ -6,7 +6,7 @@ date: 11/19/2022
 cta-text_html: Lorem Ipsum is simply dummy text that we use...interested?
 cta-button-title: Let's Go!
 featured-title: We're gonna wanna remember this
-featured-date: 2022-11-22 00:00:00
+featured-date: 11/22/2022
 featured-image_path: >-
  https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80
 featured-image_alt: coffee
@@ -54,21 +54,21 @@ seo:
 
 <!-- article/img/quote/img section -->
 <section class="border-t border-black grid md:grid-cols-2">
-    <div class="md:border-r border-black h-full row-span-5 grid items-center p-6">
-        <div class="">
+    <div class="md:border-r border-black h-full row-span-5 grid items-center p-6 md:p-16">
+        <div class="p-6 md:p-0">
             <h2 class="text-2xl font-semibold pb-4">{{page.featured-title}}</h2>
             <p class="italic font-thin pb-4">{{page.featured-date}}</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
         </div>
     </div>
-    <div class="row-span-2 border-b border-black">
+    <div class="row-span-2 md:border-b md:border-black pt-6 md:pt-0">
         <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]" />
     </div>
-    <div class="row-span-1 border-b border-black p-12">
+    <div class="row-span-1 border-b border-black p-12 md:block hidden">
         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita nobis, amet voluptate soluta assumenda dicta reprehenderit. Id nihil fuga distinctio. Debitis velit autem at."</p>
     </div>
-    <div class="row-span-2">
+    <div class="row-span-2 md:block hidden">
         <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]" />
     </div>
   </section>
