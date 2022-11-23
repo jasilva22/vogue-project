@@ -3,9 +3,7 @@ layout: default
 title: Homepage 
 _id: cta
 date: 11/19/2022
-cta-text_html: >-
-   <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-   industry.</p>
+cta-text_html: Lorem Ipsum is simply dummy text
 cta-button-title: Let's Go!
 featured-title: We're gonna wanna remember this
 featured-date: 11-22-2022
@@ -20,39 +18,7 @@ seo:
 ---
 
 <!-- include a call to action here -->
-<!-- {% include /blocks/cta.html %} -->
-
-<!-- banner w/overlay and white text centered -->
-<!-- <div class="relative h-[50vh]">
-    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[50vh]">
-    <div class="absolute bottom-0 left-0 right-0 top-0 bg-gray-800 opacity-70">
-        <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white"> Pineapple Society Hemp </h1>
-    </div>
-</div> -->
-
-
-<!-- banner w/overlay and white text centered & button -->
-<div class="relative h-[40vh]">
-    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[40vh]">
-    <div class="absolute bottom-0 left-0 right-0 top-0 bg-gray-800 opacity-70">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white">
-            <p class="inline-block pr-10">
-                {% if block.cta-text_html %}
-                    {{ block.cta-text_html }}
-                {% else %}
-                    {{page.cta-text_html}}
-                {% endif %}
-            </p>
-            <a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white sm:mt-4 text-xl hover:bg-white hover:text-black">
-                {% if block.cta-button-title %}
-                    {{ block.cta-button-title }}
-                {% else %}
-                    {{page.cta-button-title}}
-                {% endif %}
-            </a>
-        </div>
-    </div>
-</div>
+{% include /blocks/cta.html %}
 
 <!-- magazine title/blurb section -->
 <section class="grid grid-cols-1 md:grid-cols-2 border-y border-black h-[50vh]">
@@ -87,20 +53,20 @@ seo:
 </section>
 
 <!-- article/img/quote/img section -->
-<section class="border-t border-black grid md:grid-cols-2 bg-amber-50 items-center">
-    <div class="border-r border-black row-span-5">
+<section class="border-t border-black grid md:grid-cols-2 items-center">
+    <div class="md:border-r border-black row-span-5">
         <h2 class="text-2xl font-semibold">{{page.featured-title}}</h2>
         <p>{{page.featured-date}}</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae consequatur maiores sunt blanditiis atque quibusdam, quo, quod asperiores ut cupiditate illum error, deleniti sint laborum eligendi tempore accusamus. Alias provident eligendi dolorem, ipsa assumenda laudantium odit sint velit neque dignissimos ab obcaecati. Voluptatem, minus!</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum dolores eveniet impedit obcaecati ipsum sequi laboriosam atque nisi labore quis ut quos, neque ipsam odio repudiandae quod cupiditate mollitia?</p>
     </div>
     <div class="row-span-2 border-b border-black">
-        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh] bg-amber-50">
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]">
     </div>
     <div class="row-span-1 border-b border-black p-12">
         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita nobis, amet voluptate soluta assumenda dicta reprehenderit. Id nihil fuga distinctio. Debitis velit autem at."</p>
     </div>
     <div class="row-span-2">
-        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh] bg-amber-50">
+        <img src="{{page.featured-image_path}}" alt="{{page.featured-image-alt}}" class="object-cover w-full h-[30vh]">
     </div>
   </section>

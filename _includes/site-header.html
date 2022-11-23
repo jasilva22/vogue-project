@@ -1,17 +1,4 @@
-<!-- <header class="p-5">
-    <div class="grid justify-center pb-6">
-      <a href="/index.html" class="logo text-8xl font-extralight"> LOGO </a>
-    </div> 
-    <div class="text-center font-light p-4 border-y border-black">
-      <a href="#" class="p-2 px-10">link 1</a>
-      <a href="#" class="p-2 px-10">link 2</a>
-      <a href="#" class="p-2 px-10">link 3</a>
-      <a href="#" class="p-2 px-10">link 4</a>
-    </div>
-</header>
- -->
-
- <!-- testing header -->
+<!-- testing header -->
  <header class="">
    <div class="flex grid grid-cols-2 items-center pt-4 px-4">
       <div class="grid justify-left pb-8">
@@ -42,10 +29,9 @@
       </script>
   </div> 
   <div class="text-center font-light p-4 border-y border-black">
-    <a href="#" class="p-2 px-10">link 1</a>
-    <a href="#" class="p-2 px-10">link 2</a>
-    <a href="#" class="p-2 px-10">link 3</a>
-    <a href="#" class="p-2 px-10">link 4</a>
+    {% for item in site.archives %}
+      <a href="{{item.url}}" class="p-2 px-10 hover:text-gray-400">{{item.title}}</a>
+    {% endfor %}
   </div>
 </header>
 

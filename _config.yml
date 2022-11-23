@@ -2,6 +2,8 @@ collections:
   posts:
     output: true
     permalink: /posts/:slug
+  archives: 
+    output: true
 
 _select_data:
   video-types:

@@ -1,4 +1,4 @@
-<section class="p-8 text-center">
+<!-- <section class="p-8 text-center">
     <p class="inline-block pr-10">
         {% if block.cta-text_html %}
             {{ block.cta-text_html }}
@@ -13,4 +13,15 @@
             {{page.cta-button-title}}
         {% endif %}
     </a>
+</section> -->
+
+<section class="text-center p-8">
+    <p class="">{% if block.cta-text_html %}{{ block.cta-text_html }}{% else %}{{page.cta-text_html}}{% endif %}
+    <a href="#" class="inline-block border-solid border-2 rounded-lg px-6 pt-3 pb-3 bg-black text-white sm:mt-4">
+        {% if block.cta-button-title %}
+            {{ block.cta-button-title }}
+        {% else %}
+            {{page.cta-button-title}}
+        {% endif %}
+    </a></p>
 </section>
