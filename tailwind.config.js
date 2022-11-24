@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       spacing: {
         '5p': '5%',
+        '10p': '10%',
       },
       aspectRatio: {
         'portrait': '3/4',
