@@ -1,32 +1,29 @@
 ---
 layout: post-layout
-category: travel
-title: my first post
-author: bea author
-date: 2022-11-19 00:00:00
-featured-image_path: >-
-   https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
-featured-image-alt: forest with river
-cta-text_html: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-cta-button-title: Join the club
+category: coffee
+title: coffee post
+author: kansas mahomes
+date: 2023-01-30 00:00:00
+featured-image_path: /uploads/screen-shot-2022-10-12-at-11-19-19-pm.png
+featured-image-alt: color pallete
+cta-text_html: <p>Call us when you need anything</p>
+cta-button-title: Holler at us
 text_block_right:
    text_html: >-
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
       reprehenderit repellendus rem nesciunt accusamus id maiores! Expedita
       numquam quidem, assumenda dolores asperiores quas vitae minima doloribus
       ipsum est, quis voluptas?</p>
-   image_path: >-
-      https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
-   text-image-alt: same forest with river
+   image_path: /uploads/exports-8874.jpg
+   text-image-alt: asher and pops
 text_block_left:
    text_html: >-
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
       reprehenderit repellendus rem nesciunt accusamus id maiores! Expedita
       numquam quidem, assumenda dolores asperiores quas vitae minima doloribus
       ipsum est, quis voluptas?</p>
-   image_path: >-
-      https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80
-   text-image-alt: lalala
+   image_path: /uploads/exports-8886.jpg
+   text-image-alt: just asher
 text_block_column_1:
    text_html: >-
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -93,6 +90,12 @@ page_blocks:
       _id: cta
       cta-text_html: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
       cta-button-title: Join the club
+   -
+      _id: banner
+      title:
+      featured-image_path: /uploads/exports-8958.jpg
+      featured-image-alt: banner
+      heading: banner
 seo:
    title:
    description:
@@ -140,11 +143,11 @@ seo:
 <!-- <section class="grid md:grid-cols-2 p-5 items-center">
     <div>
         <img src="{{page.text_block_left.image_path}}" alt="{{page.text_block_left.text-image-alt}}" class="object-cover w-full h-72" />
-    </div>
+    
     <div class="leading-loose p-3">
         {{page.text_block_left.text_html}}
     </div>
-</section>  -->
+  -->
 
 <!------------- Text Block - Text Columns --------->
 <!-- <section>
@@ -153,20 +156,20 @@ seo:
     </div>
     <div class="grid md:grid-cols-2 leading-loose">
         <div>
-            <p>{{page.text_block_column_1.text_html}}</p>
-        </div>
+            <p>{{page.text_block_column_1.text_html}}<p></p>
+        
         <div>
             <p>{{page.text_block_column_2.text_html}}</p>
         </div>
-    </div>
-</section> -->
+    
+ -->
 
 <!------------- YouTube Video ------------------>
 <!-- <section class="p-5 max-w-4xl mx-auto">
         <div class="w-full" style="padding: 56.25% 0 0 0; position:relative;">
-            <iframe width="560" height="315" src="{{page.video_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-        </div>
-</section> -->
+            <iframe width="560" height="315" src="{{page.video_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        
+ -->
 
 <!------------ Gallery Section - Loop ----------->
 <!-- <section class="p-5 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -177,7 +180,7 @@ seo:
 
     {% endfor %}
 
-</section> -->
+ -->
 
 <!-- trying to lay side by side -->
 <section class="p-8 inline-flex text-center align-middle items-center">
@@ -220,7 +223,7 @@ seo:
 
 <!-- banner w/overlay and white text centered -->
 <div class="relative h-[50vh]">
-    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[50vh]">
+    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[50vh]" />
     <div class="absolute bottom-0 left-0 right-0 top-0 bg-gray-800 opacity-70">
         <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white"> Pineapple Society Hemp </h1>
     </div>
@@ -229,7 +232,7 @@ seo:
 
 <!-- banner w/overlay and white text centered & button -->
 <div class="relative h-[40vh]">
-    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[40vh]">
+    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="" class="object-cover w-full h-[40vh]" />
     <div class="absolute bottom-0 left-0 right-0 top-0 bg-gray-800 opacity-70">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-white">
             <p class="inline-block pr-10">
@@ -256,7 +259,7 @@ seo:
 <!-- sticky image w/text floating by -->
 <div class="grid grid-cols-2 p-12">
     <div class="relative p-4">
-        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="stuff" class="sticky top-20">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1522&q=80" alt="stuff" class="sticky top-20" />
     </div>
     <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cupiditate pariatur atque, tempore et excepturi fugiat sequi fuga velit laudantium accusantium ducimus dolorem. Saepe neque perferendis a beatae culpa odit.</p>
